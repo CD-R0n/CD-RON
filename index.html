@@ -145,26 +145,28 @@
         #buttons {
             height: 3rem;
         }
-        @media screen and (min-width: 956px) {
+        /* @media screen and (min-width: 956px) {
             nav {
                 margin: auto;
                 margin-top: 1rem;
             }
             details {
-                float: left;
+                float: none;
                 margin: -2px;
-                margin-bottom: 2rem;
-                width: calc(20% + 4px);
+                margin-bottom: 0rem;
+                width: calc(20% + 4px); 
             }
+
             summary {
                 padding: 0.25rem;
                 width: 100%;
                 margin: 0;
+                float: none;
             }
             summary:hover {
                 background-color: lime;
             }
-            .n_fig {
+            /* .n_fig {
             left: -40vw;
             margin-left: 0;
             margin-right: 0;
@@ -172,7 +174,19 @@
             right: 0;
             width: calc(100vw - 2rem);
         }
+        .n_fig {
+            left: 2px;
+            margin-left: 0;
+            margin-right: -50vw;
+            position: ;
+            right: 50%;
+            width: calc(100vw - 12px);
+            text-align: center;
         }
+    .n_nav {
+        float: left;
+    }
+        } */
     </style>
 </head>
 <body>
@@ -180,7 +194,7 @@
         <h1>CD-RON</h1>
         <p>Technische dienstverlening voor de podiumkunsten</p>
         <nav>
-            <details>
+            <details class="n_nav">
                 <summary>Theater Projecten</summary>
                 <details>
                     <summary class="n_fig">
@@ -227,7 +241,7 @@
                     </a>
                 </details>
             </details>
-            <details>
+            <details class="n_nav">
                 <summary>
                     Muziek Projecten
                 </summary>
@@ -260,13 +274,13 @@
                     </a>
                 </details>
             </details>
-            <details>
+            <details class="n_nav">
                 <summary>
                     Film projecten
                 </summary>
                 <details>
                     <summary class="n_fig">
-                        2022/heden - Blauw Scherm <u>(licht- en geluidstechniek)</u>
+                        2022/2023 - Blauw Scherm <u>(licht-, geluidstechniek en geluid postproductie)</u>
                     </summary>
                     <figure class="n_fig">
                         <img src="images/blauw_scherm_film.webp" alt="Film Blauw Scherm">
@@ -274,7 +288,7 @@
                     </figure>
                 </details>
             </details>
-            <details>
+            <details class="n_nav">
                 <summary>
                     Podcasts
                 </summary>
@@ -289,8 +303,19 @@
                         </figure>
                     </a>
                 </details>
+                <details>
+                    <summary class="n_fig">
+                        2023 - Theatergroep Irene & Co <u>(opnemen en afmixen)</u>
+                    </summary>
+                    <a href="https://schaapopdenoordpool.nl/theatergroep-irene-co/" title="Podcast Theatergroep Irene & Co" target="_blank">
+                        <figure class="n_fig">
+                            <img src="images/begin_opnieuw.webp" alt="Podcast Begin Opnieuw">
+                            <figcaption>Podcast Theatergroep Irene & Co</figcaption>
+                        </figure>
+                    </a>
+                </details>
             </details>
-            <details>
+            <details class="n_nav">
                 <summary>
                     <u>WhatsApp</u>
                 </summary>
