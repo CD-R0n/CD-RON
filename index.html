@@ -55,6 +55,7 @@
             position: relative;
             right: 50%;
             width: calc(100vw - 2rem);
+            text-align: center;
         }
         img {
             max-width: 100%;
@@ -73,9 +74,6 @@
         }
         iframe {
             border: none;
-        }
-        #wa {
-            text-align: center;
         }
         form {
             width: fit-content;
@@ -147,9 +145,8 @@
         #buttons {
             height: 3rem;
         }
-        /*@media screen and (min-width: 768px) {
+        @media screen and (min-width: 956px) {
             nav {
-                width: fit-content;
                 margin: auto;
                 margin-top: 1rem;
             }
@@ -157,9 +154,25 @@
                 float: left;
                 margin: -2px;
                 margin-bottom: 2rem;
+                width: calc(20% + 4px);
             }
+            summary {
+                padding: 0.25rem;
+                width: 100%;
+                margin: 0;
+            }
+            summary:hover {
+                background-color: lime;
+            }
+            .n_fig {
+            left: -40vw;
+            margin-left: 0;
+            margin-right: 0;
+            position: relative;
+            right: 0;
+            width: calc(100vw - 2rem);
         }
-        */
+        }
     </style>
 </head>
 <body>
@@ -282,8 +295,8 @@
                     <u>WhatsApp</u>
                 </summary>
                 <a href="https://wa.me/message/6KUB5AQYTQ2AH1" title="Open WhatsApp" target="_blank">
-                    <figure class="n_fig" id="wa">
-                        <img id="wa" src="images/whatsapp.webp" alt="WhatsApp" width="250">
+                    <figure class="n_fig">
+                        <img src="images/whatsapp.webp" alt="WhatsApp" width="250">
                         <figcaption>Klik om WhatsApp te openen</figcaption>
                     </figure> 
                 </a>
@@ -294,7 +307,6 @@
         <fieldset>
             <legend>Contact</legend>
             <table>
-                <thead></thead>
                 <tbody>
                     <tr>
                         <td><label for="naam">Naam:</label></td>
@@ -309,7 +321,6 @@
                         <td class="i_cell"><textarea name="bericht" rows="5" id="bericht" placeholder="Uw bericht." required></textarea></td>
                     </tr>
                 </tbody>
-                <tfoot></tfoot>
             </table>
         </fieldset>
         <br>
